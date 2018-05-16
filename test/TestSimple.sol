@@ -9,7 +9,8 @@ contract TestSimple {
     Simple sim = Simple(DeployedAddresses.Simple());
 
     uint expected = 6;
-    Assert.equal(sim.arithmetics(2, 3), expected, "2 * 3 should 6");
+    var (sum, product) = sim.arithmetics(2, 3);
+    Assert.equal(product, expected, "2 * 3 should 6");
   } 
 
 }

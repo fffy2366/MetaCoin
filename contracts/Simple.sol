@@ -8,10 +8,10 @@ contract Simple {
     function Simple() public {
         balances[tx.origin] = 10000;
 	}
-    function arithmetics(uint a, uint b) public returns (uint sum, uint product) {
+    function arithmetics(uint a, uint b) public view returns (uint sum, uint product) {
         sum = a + b;
         product = a * b;
-        Arith(a, b, product);
+        // Arith(a, b, product);
         return (sum, product);
     }
 }
