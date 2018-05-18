@@ -1,8 +1,8 @@
 pragma solidity ^0.4.18;
-import "../StarAccessControl.sol";
-import "../ERC721Draft.sol";
+import "../AccessControl.sol";
+import "../ERC721.sol";
 
-contract BaseAuction is EtherbotsPrivileges{
+contract BaseAuction is EtherstarsPrivileges{
     // Represents an auction on an NFT
     struct Auction {
         // Current owner of NFT

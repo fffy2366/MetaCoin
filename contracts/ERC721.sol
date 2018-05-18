@@ -1,5 +1,5 @@
 pragma solidity ^0.4.18;
-import "./StarAccessControl.sol";
+import "./AccessControl.sol";
 
 /// @title Interface for contracts conforming to ERC-721: Non-Fungible Tokens
 /// @author Dieter Shirley <dete@axiomzen.co> (https://github.com/dete)
